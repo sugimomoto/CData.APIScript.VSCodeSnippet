@@ -1,0 +1,1249 @@
+{
+  "allownull": {
+    "scope": "xml",
+    "prefix": "allownull",
+    "body": [
+      "allownull()"
+    ],
+    "description": "[attr |  allownull()] :                 Returns NULL if the attribute does not exist or the value if it does."
+  },
+  "arrayfind": {
+    "scope": "xml",
+    "prefix": "arrayfind",
+    "body": [
+      "arrayfind(substring)"
+    ],
+    "description": "[attr |  arrayfind(substring)] :                 Returns the index at which the string is found in the attribute array. The index is 1 based. : searchstring: The string to search for in the original value.\n                    "
+  },
+  "base64decode": {
+    "scope": "xml",
+    "prefix": "base64decode",
+    "body": [
+      "base64decode()"
+    ],
+    "description": "[attr |  base64decode()] :                 Converts the attribute value to a base 64 decoded string."
+  },
+  "base64encode": {
+    "scope": "xml",
+    "prefix": "base64encode",
+    "body": [
+      "base64encode()"
+    ],
+    "description": "[attr |  base64encode()] :                 Converts the attribute value to a base 64 encoded string."
+  },
+  "capitalize": {
+    "scope": "xml",
+    "prefix": "capitalize",
+    "body": [
+      "capitalize()"
+    ],
+    "description": "[attr |  capitalize()] :                 Returns the original attribute value with only its first character capitalized."
+  },
+  "capitalizeall": {
+    "scope": "xml",
+    "prefix": "capitalizeall",
+    "body": [
+      "capitalizeall()"
+    ],
+    "description": "[attr |  capitalizeall()] :                 Returns the original attribute value with the first character of all words capitalized."
+  },
+  "center": {
+    "scope": "xml",
+    "prefix": "center",
+    "body": [
+      "center(integer_width[, character])"
+    ],
+    "description": "[attr |  center(integer_width[, character])] :                 Returns the attribute value centered in a string of width specified by the first parameter. Padding is done using the fillchar specified by the second parameter. : width: The total width of the output string.\n                        character: The optional character used for padding. If not specified this defaults to a space.\n                    "
+  },
+  "contains": {
+    "scope": "xml",
+    "prefix": "contains",
+    "body": [
+      "contains(value[, ifcontains][, ifnotcontains])"
+    ],
+    "description": "[attr | contains(value[, ifcontains][, ifnotcontains])] :                 Returns true (or ifcontains) if the attribute value contains the parameter value, false (or ifnotcontains) otherwise. : value: The string to find from the attribute value.\n                        ifcontains: The optional value returned if the attribute value contains the parameter value.\n                        ifnotcontains: The optional value returned if the attribute value does not contain the parameter value.\n                    "
+  },
+  "count": {
+    "scope": "xml",
+    "prefix": "count",
+    "body": [
+      "count(substring)"
+    ],
+    "description": "[attr |  count(substring)] :                 Returns the number of occurrences in the attribute value of a substring specified by the first parameter. : substring: The substring to search for in the attribute value.\n                    "
+  },
+  "currency": {
+    "scope": "xml",
+    "prefix": "currency",
+    "body": [
+      "currency([integer_count])"
+    ],
+    "description": "[attr |  currency([integer_count])] :                 Returns the numeric value formatted as currency. : count: The optional number specifying how many places to the right of the decimal are displayed. The default is 2.\n                    "
+  },
+  "decimal": {
+    "scope": "xml",
+    "prefix": "decimal",
+    "body": [
+      "decimal([integer_count])"
+    ],
+    "description": "[attr |  decimal([integer_count])] :                 Returns the numeric value formatted as a decimal number. : count: The optional number that indicates how many places to the right of the decimal are displayed. Default is 2.\n                    "
+  },
+  "def": {
+    "scope": "xml",
+    "prefix": "def",
+    "body": [
+      "def([notexists][, exists])"
+    ],
+    "description": "[attr |  def([notexists][, exists])] :                 Checks for the existence of an attribute and returns the specified parameter value if it does not. : notexists: The optional value to return if the attribute value does not exist.\n                        exists: The optional value to return if the original attribute exists. If not specified, the original value of the attribute is returned.\n                    "
+  },
+  "empty": {
+    "scope": "xml",
+    "prefix": "empty",
+    "body": [
+      "empty(value)"
+    ],
+    "description": "[attr |  empty(value)] :                 Returns the specified value if the attribute value is empty, otherwise the original attribute value. : value: The value that will be used if the attribute is empty.\n                    "
+  },
+  "endswith": {
+    "scope": "xml",
+    "prefix": "endswith",
+    "body": [
+      "endswith(substring[, iftrue][, iffalse])"
+    ],
+    "description": "[attr |  endswith(substring[, iftrue][, iffalse])] :                 Determines whether the attribute value ends with the specified parameter. Returns true (or iftrue) if the attribute ends with the value and false (or iffalse) if not. : substring: The string expected at the end.\n                        iftrue: The optional value returned if the attribute value ends with the parameter value.\n                        iffalse: The optional value returned if the attribute value does not end with the parameter value.\n                    "
+  },
+  "equals": {
+    "scope": "xml",
+    "prefix": "equals",
+    "body": [
+      "equals(value[, ifequals][, ifnotequals])"
+    ],
+    "description": "[attr | equals(value[, ifequals][, ifnotequals])] :                 Compares the attribute value with the first parameter value and returns true (or ifequals) if they are equal and false (or ifnotequals) if they are not. : value: The string to compare with the attribute value.\n                        ifequals: The optional value returned if the attribute value equals the value represented by the first parameter.\n                        ifnotequals: The optional value returned if the attribute value does not equal the value represented by the first parameter.\n                    "
+  },
+  "extendtabs": {
+    "scope": "xml",
+    "prefix": "extendtabs",
+    "body": [
+      "extendtabs([integer_width])"
+    ],
+    "description": "[attr |  extendtabs([integer_width])] :                 Replaces all tab characters found in the attribute value with spaces. If the tab size specified by the parameter is not given, a default tab size of 8 characters is used. : width: The optional tab width, defaults to 8 if not specified.\n                    "
+  },
+  "expr": {
+    "scope": "xml",
+    "prefix": "expr",
+    "body": [
+      "expr(expression)"
+    ],
+    "description": "[attr |  expr(expression)] :                 Evaluates the mathematical expression. : expression: The expression.\n                    "
+  },
+  "find": {
+    "scope": "xml",
+    "prefix": "find",
+    "body": [
+      "find(substring[, integer_startindex])"
+    ],
+    "description": "[attr | find(substring[, integer_startindex])] :                 Returns the lowest zero-based index at which the substring is found in the attribute value. : substring: The string to search for in the attribute value.\n                        startindex: The optional index at which to start the search.\n                    "
+  },
+  "getlength": {
+    "scope": "xml",
+    "prefix": "getlength",
+    "body": [
+      "getlength()"
+    ],
+    "description": "[attr |  getlength()] :                 Returns the number of characters in the attribute value."
+  },
+  "ifequal": {
+    "scope": "xml",
+    "prefix": "ifequal",
+    "body": [
+      "ifequal(value[, ifequals][, ifnotequals])"
+    ],
+    "description": "[attr | ifequal(value[, ifequals][, ifnotequals])] :                 Compares the attribute value with the first parameter value and returns true (or ifequals) if they are equal and false (or ifnotequals) if they are not. : value: The string to compare with the attribute value.\n                        ifequals: The optional value returned if the attribute value equals the value represented by the first parameter.\n                        ifnotequals: The optional value returned if the attribute value does not equal the value represented by the first parameter.\n                    "
+  },
+  "ifmatches": {
+    "scope": "xml",
+    "prefix": "ifmatches",
+    "body": [
+      "ifmatches(value[, ifmatch][, ifnotmatch])"
+    ],
+    "description": "[attr |  ifmatches(value[, ifmatch][, ifnotmatch])] :                 Returns true (or ifmatch) if the attribute value matches the first parameter, otherwise false (or ifnotmatch). : value: The value that will be compared with the attribute value.\n                        ifmatch: The optional value returned if the attribute value matches the parameter value.\n                        ifnotmatch: The optional value returned if the attribute value does not match the parameter value.\n                    "
+  },
+  "iftrue": {
+    "scope": "xml",
+    "prefix": "iftrue",
+    "body": [
+      "iftrue([iftrue][, iffalse])"
+    ],
+    "description": "[attr | iftrue([iftrue][, iffalse])] :                 Checks the attribute value and returns true (or iftrue) if true and false (or iffalse) if false. : iftrue: The optional value returned if the attribute value is true.\n                        iffalse: The optional value returned if the attribute value is false.\n                    "
+  },
+  "implode": {
+    "scope": "xml",
+    "prefix": "implode",
+    "body": [
+      "implode([separator])"
+    ],
+    "description": "[attr | implode([separator])] :                 Implodes multiple values to a string separated by a separator. : separator: The optional separator.\n                    "
+  },
+  "insert": {
+    "scope": "xml",
+    "prefix": "insert",
+    "body": [
+      "insert(integer_index, string)"
+    ],
+    "description": "[attr |  insert(integer_index, string)] :                 Inserts the specified string at the specified index. : index: The zero-based index of the position in the original value where the new string should be inserted.\n                        string: The string to insert into the original value.\n                    "
+  },
+  "isalpha": {
+    "scope": "xml",
+    "prefix": "isalpha",
+    "body": [
+      "isalpha([ifalpha][, ifnotalpha])"
+    ],
+    "description": "[attr | isalpha([ifalpha][, ifnotalpha])] :                 Returns true (or ifalpha) if all characters in the attribute value are alphabetic and there is at least one character, false (or ifnotalpha) otherwise. : ifalpha: The optional value returned if the attribute value is alphabetic.\n                        ifnotalpha: The optional value returned if the attribute value is not alphabetic.\n                    "
+  },
+  "isalphabetic": {
+    "scope": "xml",
+    "prefix": "isalphabetic",
+    "body": [
+      "isalphabetic([ifalpha][, ifnotalpha])"
+    ],
+    "description": "[attr | isalphabetic([ifalpha][, ifnotalpha])] :                 Returns true (or ifalpha) if all characters in the attribute value are alphabetic and there is at least one character, false (or ifnotalpha) otherwise. : ifalpha: The optional value returned if the attribute value is alphabetic.\n                        ifnotalpha: The optional value returned if the attribute value is not alphabetic.\n                    "
+  },
+  "isalphanum": {
+    "scope": "xml",
+    "prefix": "isalphanum",
+    "body": [
+      "isalphanum([ifalphanum][, ifnotalphanum])"
+    ],
+    "description": "[attr | isalphanum([ifalphanum][, ifnotalphanum])] :                 Returns true (or ifalphanum) if all characters in the attribute value are alphanumeric and there is at least one character, false (or ifnotalphanum) otherwise. : ifalphanum: The optional value returned if the attribute value contains only alphabetic or numeric characters.\n                        ifnotalphanum: The optional value returned if the attribute value contains nonalphabetic or nonnumeric characters.\n                    "
+  },
+  "isalphanumeric": {
+    "scope": "xml",
+    "prefix": "isalphanumeric",
+    "body": [
+      "isalphanumeric([ifalphanum][, ifnotalphanum])"
+    ],
+    "description": "[attr | isalphanumeric([ifalphanum][, ifnotalphanum])] :                 Returns true (or ifalphanum) if all characters in the attribute value are alphanumeric and there is at least one character, false (or ifnotalphanum) otherwise. : ifalphanum: The optional value returned if the attribute value contains only alphabetic or numeric characters.\n                        ifnotalphanum: The optional value returned if the attribute value contains nonalphabetic or nonnumeric characters.\n                    "
+  },
+  "isdigit": {
+    "scope": "xml",
+    "prefix": "isdigit",
+    "body": [
+      "isdigit([ifnum][, ifnotnum])"
+    ],
+    "description": "[attr | isdigit([ifnum][, ifnotnum])] :                 Returns true (or ifnum) if all characters in the attribute value are digits and there is at least one character, false (or ifnotnum) otherwise. : ifnum: The optional value returned if the attribute value is numeric.\n                        ifnotnum: The optional value returned if the attribute value is not numeric.\n                    "
+  },
+  "islower": {
+    "scope": "xml",
+    "prefix": "islower",
+    "body": [
+      "islower([iflower][, ifnotlower])"
+    ],
+    "description": "[attr |  islower([iflower][, ifnotlower])] :                 Returns true (or iflower) if all letters in the attribute value are lowercase and there is at least one character that is a letter, false (or ifnotlower) otherwise. : iflower: The optional value returned if the attribute value is lowercase.\n                        ifnotlower: The optional value returned if the attribute value is not lowercase.\n                    "
+  },
+  "isnumeric": {
+    "scope": "xml",
+    "prefix": "isnumeric",
+    "body": [
+      "isnumeric([ifnum][, ifnotnum])"
+    ],
+    "description": "[attr | isnumeric([ifnum][, ifnotnum])] :                 Returns true (or ifnum) if all characters in the attribute value are digits and there is at least one character, false (or ifnotnum) otherwise. : ifnum: The optional value returned if the attribute value is numeric.\n                        ifnotnum: The optional value returned if the attribute value is not numeric.\n                    "
+  },
+  "isspace": {
+    "scope": "xml",
+    "prefix": "isspace",
+    "body": [
+      "isspace([ifspace][, ifnotspace])"
+    ],
+    "description": "[attr |  isspace([ifspace][, ifnotspace])] :                 Return true (or ifspace) if there are only white-space characters in the attribute value and there is at least one character, false (or ifnotspace) otherwise. : ifspace: The optional value returned if the attribute value is a space.\n                        ifnotspace: The optional value returned if the attribute value is not a space.\n                    "
+  },
+  "isupper": {
+    "scope": "xml",
+    "prefix": "isupper",
+    "body": [
+      "isupper([ifupper][, ifnotupper])"
+    ],
+    "description": "[attr |  isupper([ifupper][, ifnotupper])] :                 Returns true (or ifupper) if all letters in the attribute value are uppercase and there is at least one character that is a letter, false (or ifnotupper) otherwise. : ifupper: The optional value returned if the attribute value is uppercase.\n                        ifnotupper: The optional value returned if the attribute value is not uppercase.\n                    "
+  },
+  "join": {
+    "scope": "xml",
+    "prefix": "join",
+    "body": [
+      "join([separator])"
+    ],
+    "description": "[attr | join([separator])] :                 Implodes multiple values to a string separated by a separator. : separator: The optional separator.\n                    "
+  },
+  "jsonescape": {
+    "scope": "xml",
+    "prefix": "jsonescape",
+    "body": [
+      "jsonescape()"
+    ],
+    "description": "[attr |  jsonescape()] :                 Converts the attribute value to a JSON-escaped, single-line string."
+  },
+  "just": {
+    "scope": "xml",
+    "prefix": "just",
+    "body": [
+      "just(integer_width[, character])"
+    ],
+    "description": "[attr | just(integer_width[, character])] :                 Returns the attribute value left-justified in a string of length specified by the first parameter. Padding is done using the fillchar specified by the second parameter. : width: The total width of the output string.\n                        character: The optional character used for padding. The default is a space.\n                    "
+  },
+  "lfind": {
+    "scope": "xml",
+    "prefix": "lfind",
+    "body": [
+      "lfind(substring[, integer_startindex])"
+    ],
+    "description": "[attr | lfind(substring[, integer_startindex])] :                 Returns the lowest zero-based index at which the substring is found in the attribute value. : substring: The string to search for in the attribute value.\n                        startindex: The optional index at which to start the search.\n                    "
+  },
+  "ljust": {
+    "scope": "xml",
+    "prefix": "ljust",
+    "body": [
+      "ljust(integer_width[, character])"
+    ],
+    "description": "[attr | ljust(integer_width[, character])] :                 Returns the attribute value left-justified in a string of length specified by the first parameter. Padding is done using the fillchar specified by the second parameter. : width: The total width of the output string.\n                        character: The optional character used for padding. The default is a space.\n                    "
+  },
+  "lsplit": {
+    "scope": "xml",
+    "prefix": "lsplit",
+    "body": [
+      "lsplit(delimiter, integer_index)"
+    ],
+    "description": "[attr | lsplit(delimiter, integer_index)] :                 Splits the string represented by the attribute value into tokens delimited by the first parameter and returns the token at the index specified by the second parameter; counts from the left. : delimiter: The string used as a separator for splitting the string into tokens.\n                        index: The index of the token requested where the first token is at index 1.\n                    "
+  },
+  "match": {
+    "scope": "xml",
+    "prefix": "match",
+    "body": [
+      "match(pattern[, index][, option])"
+    ],
+    "description": "[attr | match(pattern[, index][, option])] :                 Searches the string represented by the attribute value for an occurrence of the regular expression supplied in the pattern parameter. : pattern: The regular expression pattern to match.\n                        index: The optional numbered index of the match to return. The default is 0.\n                        option: The optional comma-separated list of regular expression options. Some of the commonly used options are IgnoreCase, Multiline, Singleline, and IgnorePatternWhitespace.\n                    "
+  },
+  "md5hash": {
+    "scope": "xml",
+    "prefix": "md5hash",
+    "body": [
+      "md5hash([converttobase64])"
+    ],
+    "description": "[attr |  md5hash([converttobase64])] :                 Computes the MD5 hash of the attribute value. : encodetobase64: The optional boolean value that specifies whether to convert the result into a base 64 encoded string. Default is true.\n                    "
+  },
+  "notequals": {
+    "scope": "xml",
+    "prefix": "notequals",
+    "body": [
+      "notequals(value[, notequals][, equals])"
+    ],
+    "description": "[attr |  notequals(value[, notequals][, equals])] :                 Compares the attribute value with the first parameter value. Returns true (or notequals) if they are not equal and false (or equals) if they are. : value: The string to compare with the attribute value.\n                        notequals: The optional value returned if the attribute value does not equal the value represented by the first parameter.\n                        equals: The optional value returned if the attribute value equals the value represented by the first parameter.\n                    "
+  },
+  "nowhitespace": {
+    "scope": "xml",
+    "prefix": "nowhitespace",
+    "body": [
+      "nowhitespace()"
+    ],
+    "description": "[attr |  nowhitespace()] :                 Removes the white space from the string represented by the atttribute value."
+  },
+  "percentage": {
+    "scope": "xml",
+    "prefix": "percentage",
+    "body": [
+      "percentage([integer_count])"
+    ],
+    "description": "[attr |  percentage([integer_count])] :                 Returns the numeric value formatted as a percentage. : count: The optional number that indicates how many places to the right of the decimal are displayed.\n                    "
+  },
+  "regex": {
+    "scope": "xml",
+    "prefix": "regex",
+    "body": [
+      "regex(pattern[, index][, option])"
+    ],
+    "description": "[attr | regex(pattern[, index][, option])] :                 Searches the string represented by the attribute value for an occurrence of the regular expression supplied in the pattern parameter. : pattern: The regular expression pattern to match.\n                        index: The optional numbered index of the match to return. The default is 0.\n                        option: The optional comma-separated list of regular expression options. Some of the commonly used options are IgnoreCase, Multiline, Singleline, and IgnorePatternWhitespace.\n                    "
+  },
+  "regexmatch": {
+    "scope": "xml",
+    "prefix": "regexmatch",
+    "body": [
+      "regexmatch(pattern[, index][, option])"
+    ],
+    "description": "[attr | regexmatch(pattern[, index][, option])] :                 Searches the string represented by the attribute value for an occurrence of the regular expression supplied in the pattern parameter. : pattern: The regular expression pattern to match.\n                        index: The optional numbered index of the match to return. The default is 0.\n                        option: The optional comma-separated list of regular expression options. Some of the commonly used options are IgnoreCase, Multiline, Singleline, and IgnorePatternWhitespace.\n                    "
+  },
+  "regexreplace": {
+    "scope": "xml",
+    "prefix": "regexreplace",
+    "body": [
+      "regexreplace(search, replacewith[, integer_startat])"
+    ],
+    "description": "[attr |  regexreplace(search, replacewith[, integer_startat])] :                 Replaces all occurrences of the regular expression pattern found in the attribute value with replacewith. : search: The regular expression to search with.\n                        replacewith: The text to replace the match with.\n                        startat: The optional character index at which to start replacement. Default is 0.\n                    "
+  },
+  "remove": {
+    "scope": "xml",
+    "prefix": "remove",
+    "body": [
+      "remove(integer_index[, integer_count])"
+    ],
+    "description": "[attr |  remove(integer_index[, integer_count])] :                 Deletes characters from the attribute value; begins at the zero-based index specified by the first parameter. : index: The position to begin deleting the characters.\n                        count: The optional number of characters to delete. If not provided all characters starting from the specified index will be deleted.\n                    "
+  },
+  "replace": {
+    "scope": "xml",
+    "prefix": "replace",
+    "body": [
+      "replace(oldvalue, newvalue[, ishex])"
+    ],
+    "description": "[attr |  replace(oldvalue, newvalue[, ishex])] :                 Replaces all occurrences of the first parameter in the string represented by the attribute value with the value of the second parameter. : oldvalue: The string to be replaced.\n                        newvalue: The string to replace all occurrences of the first parameter.\n                        ishex: The optional boolean value specifying whether the first parameter is a hex representation of a character to replace. Default is false.\n                    "
+  },
+  "rfind": {
+    "scope": "xml",
+    "prefix": "rfind",
+    "body": [
+      "rfind(substring[, integer_startindex])"
+    ],
+    "description": "[attr |  rfind(substring[, integer_startindex])] :                 Returns the highest zero-based index at which the substring is found in the attribute value. : substring: The string to search for in the original value.\n                        startindex: The optional index at which to start the search.\n                    "
+  },
+  "rjust": {
+    "scope": "xml",
+    "prefix": "rjust",
+    "body": [
+      "rjust(integer_width[, character])"
+    ],
+    "description": "[attr |  rjust(integer_width[, character])] :                 Returns the right-justified attribute value in a string of length specified by the second parameter. Padding is done using the fillchar specified by the first parameter. : width: The total width of the output string.\n                        character: The optional character used for padding, if not specified this defaults to a space.\n                    "
+  },
+  "rsplit": {
+    "scope": "xml",
+    "prefix": "rsplit",
+    "body": [
+      "rsplit(delimiter, integer_index)"
+    ],
+    "description": "[attr |  rsplit(delimiter, integer_index)] :                 Splits the string represented by the attribute value into tokens delimited with the first parameter and returns the token at the index specified by the second parameter; counts from the right. : delimiter: The string used as a separator for splitting the string into tokens.\n                        index: The index of the token requested where the first token is at index 1.\n                    "
+  },
+  "sha1hash": {
+    "scope": "xml",
+    "prefix": "sha1hash",
+    "body": [
+      "sha1hash([converttobase64])"
+    ],
+    "description": "[attr |  sha1hash([converttobase64])] :                 Computes the SHA-1 hash of the attribute value. : encodetobase64: The optional boolean value that specifies whether to convert the result into a base 64 encoded string. Default is true.\n                    "
+  },
+  "split": {
+    "scope": "xml",
+    "prefix": "split",
+    "body": [
+      "split(delimiter, integer_index)"
+    ],
+    "description": "[attr | split(delimiter, integer_index)] :                 Splits the string represented by the attribute value into tokens delimited by the first parameter and returns the token at the index specified by the second parameter; counts from the left. : delimiter: The string used as a separator for splitting the string into tokens.\n                        index: The index of the token requested where the first token is at index 1.\n                    "
+  },
+  "sqlescape": {
+    "scope": "xml",
+    "prefix": "sqlescape",
+    "body": [
+      "sqlescape()"
+    ],
+    "description": "[attr |  sqlescape()] :                 Converts the attribute value to an SQL-escaped, single-line string. : dbtype: The database type to encode. The allowed values are SQL or SQLite. Default is SQL.\n                    "
+  },
+  "startswith": {
+    "scope": "xml",
+    "prefix": "startswith",
+    "body": [
+      "startswith(substring[, iftrue][, iffalse])"
+    ],
+    "description": "[attr |  startswith(substring[, iftrue][, iffalse])] :                 Returns true (or iftrue) if the attribute value starts with the specified parameter, false (or iffalse) otherwise. : substring: The string expected at the begining.\n                        iftrue: The optional value returned if the attribute value starts with the parameter value.\n                        iffalse: The optional value returned if the attribute value does not start with the parameter value.\n                    "
+  },
+  "striphtml": {
+    "scope": "xml",
+    "prefix": "striphtml",
+    "body": [
+      "striphtml()"
+    ],
+    "description": "[attr | striphtml()] :                 Returns the string with any HTML markup removed."
+  },
+  "toalpha": {
+    "scope": "xml",
+    "prefix": "toalpha",
+    "body": [
+      "toalpha()"
+    ],
+    "description": "[attr | toalpha()] :                 Returns only the letters in a string."
+  },
+  "toalphanum": {
+    "scope": "xml",
+    "prefix": "toalphanum",
+    "body": [
+      "toalphanum()"
+    ],
+    "description": "[attr | toalphanum()] :                 Returns only the alphanumeric characters in a string."
+  },
+  "tolower": {
+    "scope": "xml",
+    "prefix": "tolower",
+    "body": [
+      "tolower()"
+    ],
+    "description": "[attr |  tolower()] :                 Returns the string represented by the attribute value with all characters converted to lowercase."
+  },
+  "toupper": {
+    "scope": "xml",
+    "prefix": "toupper",
+    "body": [
+      "toupper()"
+    ],
+    "description": "[attr |  toupper()] :                 Returns the string represented by the attribute value with all characters converted to uppercase."
+  },
+  "trim": {
+    "scope": "xml",
+    "prefix": "trim",
+    "body": [
+      "trim()"
+    ],
+    "description": "[attr | trim()] :                 Trims leading and trailing white space from an attribute."
+  },
+  "trimend": {
+    "scope": "xml",
+    "prefix": "trimend",
+    "body": [
+      "trimend()"
+    ],
+    "description": "[attr | trimend()] :                 Trims trailing white space from an attribute."
+  },
+  "trimstart": {
+    "scope": "xml",
+    "prefix": "trimstart",
+    "body": [
+      "trimstart()"
+    ],
+    "description": "[attr | trimstart()] :                 Trims leading white space from an attribute."
+  },
+  "truncate": {
+    "scope": "xml",
+    "prefix": "truncate",
+    "body": [
+      "truncate(integer_count)"
+    ],
+    "description": "[attr |  truncate(integer_count)] :                 Truncates the attribute value to the number of characters specified by the parameter. : count: The number of characters in the resulting string.\n                    "
+  },
+  "wordwrap": {
+    "scope": "xml",
+    "prefix": "wordwrap",
+    "body": [
+      "wordwrap([integer_width][, break][, cut][, wrapexp])"
+    ],
+    "description": "[attr |  wordwrap([integer_width][, break][, cut][, wrapexp])] :                 Wraps a string to a given number of characters. : width: The optional number of characters at which the string will be wrapped.\n                        break: The optional break parameter to be used to break the line.\n                        cut: The optional boolean value that specifies whether to wrap the string at or before the specified width. Default is false.\n                        wrapexp: The optional regex expression to be used as a breakable characters.  Default is space.\n                    "
+  },
+  "print": {
+    "scope": "xml",
+    "prefix": "print",
+    "body": [
+      "print([delim])"
+    ],
+    "description": "[attr |  print([delim])] :                 Returns a string with all the values of the attribute concatenated using the specified delimiter. : delim: The optional delimiter to separate values with. Default is a comma.\n                    "
+  },
+  "xmldecode": {
+    "scope": "xml",
+    "prefix": "xmldecode",
+    "body": [
+      "xmldecode()"
+    ],
+    "description": "[attr |  xmldecode()] :                 Converts the attribute value to a XML decoded string."
+  },
+  "xmlencode": {
+    "scope": "xml",
+    "prefix": "xmlencode",
+    "body": [
+      "xmlencode()"
+    ],
+    "description": "[attr |  xmlencode()] :                 Converts the attribute value to a XML encoded string."
+  },
+  "compare": {
+    "scope": "xml",
+    "prefix": "compare",
+    "body": [
+      "compare([value][, inputformat])"
+    ],
+    "description": "[attr | compare([value][, inputformat])] :                 Returns a signed number indicating the relative values of dates represented by the attribute value and parameter value. : value: The optional string representation of the date that will be compared with the attribute value. Default is now.\n                        inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "date": {
+    "scope": "xml",
+    "prefix": "date",
+    "body": [
+      "date([outputformat])"
+    ],
+    "description": "[attr | date([outputformat])] :                 Returns the current system date and time in the format specified by the parameter if one was provided. : outputformat: The optional format specifier. Valid specifiers include d (short date pattern), D (long date pattern), f (long date/short time pattern), F (long date/time pattern), g (general short date/time pattern), G (general short date/long time pattern), r or R (RFC1123 pattern), s (sortable date/time pattern), t (short time pattern), T long time pattern), file (Windows file time), MM/dd/yy, etc.\n                    "
+  },
+  "dateadd": {
+    "scope": "xml",
+    "prefix": "dateadd",
+    "body": [
+      "dateadd([interval][, integer_value][, outputformat][, inputformat])"
+    ],
+    "description": "[attr | dateadd([interval][, integer_value][, outputformat][, inputformat])] :                 Returns a string value of the datetime that results from adding the specified number interval (a signed integer) to the specified date part of the date. : interval: The optional interval you want to add.  Specify year, month, day, hour, minute, second, or millisecond.\n                        value: The optional number of intervals you want to add. Can either be positive for dates in the future or negative for dates in the past.\n                        outputformat: The optional output format specifier. Valid specifiers include d(short date pattern), D(long date pattern), f(long date/short time pattern), F(long date/time pattern), g(general short date/time pattern), G(general short date/long time pattern), r or R(RFC1123 pattern), s(sortable date/time pattern), t(short time pattern), T(long time pattern), file(Windows file time), MM/dd/yy, etc.\n                        inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "datediff": {
+    "scope": "xml",
+    "prefix": "datediff",
+    "body": [
+      "datediff([interval][, value][, inputformat])"
+    ],
+    "description": "[attr | datediff([interval][, value][, inputformat])] :                 Returns the difference (in units specified by the first parameter) between now and the date specified by the second parameter. : interval: The optional interval you want the result in. Specify day, hour, minute, second, or millisecond.\n                        value: The optional string representation of the date to compare with attribute value. Default is now.\n                        inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "day": {
+    "scope": "xml",
+    "prefix": "day",
+    "body": [
+      "day([inputformat])"
+    ],
+    "description": "[attr | day([inputformat])] :                 Returns the day component, expressed as a value between 1 and 31, of the date represented by the attribute value. : inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "dayofweek": {
+    "scope": "xml",
+    "prefix": "dayofweek",
+    "body": [
+      "dayofweek([inputformat])"
+    ],
+    "description": "[attr | dayofweek([inputformat])] :                 Returns the day of week for the date represented by the attribute value. : inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "dayofyear": {
+    "scope": "xml",
+    "prefix": "dayofyear",
+    "body": [
+      "dayofyear([inputformat])"
+    ],
+    "description": "[attr | dayofyear([inputformat])] :                 Returns the day of year expressed as a value between 1 and 366 for the date represented by the attribute value. : inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "filetimenow": {
+    "scope": "xml",
+    "prefix": "filetimenow",
+    "body": [
+      "filetimenow()"
+    ],
+    "description": "[attr | filetimenow()] :                 Returns the date and time for the current system file time."
+  },
+  "fromfiletime": {
+    "scope": "xml",
+    "prefix": "fromfiletime",
+    "body": [
+      "fromfiletime([outputformat])"
+    ],
+    "description": "[attr |  fromfiletime([outputformat])] :                 Converts a valid file time to a valid datetime value formatted as specified by the parameter if one was provided. : outputformat: The optional output format specifier. Valid specifiers include d (short date pattern), D (long date pattern), f (long date/short time pattern), F (long date/time pattern), g (general short date/time pattern), G (general short date/long time pattern), r or R (RFC1123 pattern), s (sortable date/time pattern), t (short time pattern), T (long time pattern), file (Windows file time), MM/dd/yy, etc.\n                    "
+  },
+  "isleap": {
+    "scope": "xml",
+    "prefix": "isleap",
+    "body": [
+      "isleap([ifleap][, ifnotleap])"
+    ],
+    "description": "[attr | isleap([ifleap][, ifnotleap])] :                 Returns true (or ifleap) if the 4-digit year represented by the attribute value is a leap year, false (or ifnotleap) otherwise. : ifleap: The optional value returned if the attribute value is a leap year.\n                        ifnotleap: The optional value returned if the attribute value is not a leap year.\n                    "
+  },
+  "month": {
+    "scope": "xml",
+    "prefix": "month",
+    "body": [
+      "month([inputformat])"
+    ],
+    "description": "[attr | month([inputformat])] :                 Returns the month component expressed as a value between 1 and 12 of the date represented by the attribute value. : inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "now": {
+    "scope": "xml",
+    "prefix": "now",
+    "body": [
+      "now([outputformat])"
+    ],
+    "description": "[attr | now([outputformat])] :                 Returns the current system date and time in the format specified by the parameter if one was provided. : outputformat: The optional format specifier. Valid specifiers include d (short date pattern), D (long date pattern), f (long date/short time pattern), F (long date/time pattern), g (general short date/time pattern), G (general short date/long time pattern), r or R (RFC1123 pattern), s (sortable date/time pattern), t (short time pattern), T long time pattern), file (Windows file time), MM/dd/yy, etc.\n                    "
+  },
+  "todate": {
+    "scope": "xml",
+    "prefix": "todate",
+    "body": [
+      "todate([outputformat][,inputformat])"
+    ],
+    "description": "[attr |  todate([outputformat][,inputformat])] :                 Returns the date specified by the attribute value formatted as specified by the parameter if one was provided. : outputformat: The optional output format specifier. Valid specifiers include d (short date pattern), D (long date pattern), f (long date/short time pattern), F (long date/time pattern), g (general short date/time pattern), G (general short date/long time pattern), r or R (RFC1123 pattern), s (sortable date/time pattern), t (short time pattern), T (long time pattern), file (Windows file time), MM/dd/yy, etc.\n                        inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "tofiletime": {
+    "scope": "xml",
+    "prefix": "tofiletime",
+    "body": [
+      "tofiletime([inputformat])"
+    ],
+    "description": "[attr |  tofiletime([inputformat])] :                 Converts a valid datetime to a valid file time value. : inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "tomonth": {
+    "scope": "xml",
+    "prefix": "tomonth",
+    "body": [
+      "tomonth()"
+    ],
+    "description": "[attr | tomonth()] :                 Returns the name of the month for the numeric value specified by the attribute value."
+  },
+  "toutc": {
+    "scope": "xml",
+    "prefix": "toutc",
+    "body": [
+      "toutc([outputformat][, inputformat])"
+    ],
+    "description": "[attr |  toutc([outputformat][, inputformat])] :                 Returns the date specified by the attribute value converted to UTC and formatted as specified by the outputformat parameter if one was provided. : outputformat: The optional format specifier. Valid specifiers include d (short date pattern), D (long date pattern), f (long date/short time pattern), F (long date/time pattern), g (general short date/time pattern), G (general short date/long time pattern), r or R (RFC1123 pattern), s (sortable date/time pattern), t (short time pattern), T (long time pattern), and file (Windows file time), MM/dd/yy, etc.\n                    "
+  },
+  "utcnow": {
+    "scope": "xml",
+    "prefix": "utcnow",
+    "body": [
+      "utcnow([outputformat])"
+    ],
+    "description": "[attr | utcnow([outputformat])] :                 Returns the current system UTC date and time. : outputformat: The optional format specifier. Valid specifiers include d (short date pattern), D (long date pattern), f (long date/short time pattern), F (long date/time pattern),  g(general short date/time pattern), G (general short date/long time pattern), r or R (RFC1123 pattern), s (sortable date/time pattern), t (short time pattern), T (long time pattern), file (Windows file time), MM/dd/yy, etc.\n                    "
+  },
+  "weekday": {
+    "scope": "xml",
+    "prefix": "weekday",
+    "body": [
+      "weekday([inputformat])"
+    ],
+    "description": "[attr | weekday([inputformat])] :                 Returns the day of the week as an integer where Monday is 0 and Sunday is 6. : inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "year": {
+    "scope": "xml",
+    "prefix": "year",
+    "body": [
+      "year([inputformat])"
+    ],
+    "description": "[attr | year([inputformat])] :                 Returns the year component of the date represented by the attribute value. : inputformat: The optional input format specifier. Default is autodetected.\n                    "
+  },
+  "abs": {
+    "scope": "xml",
+    "prefix": "abs",
+    "body": [
+      "abs()"
+    ],
+    "description": "[attr | abs()] :                 Returns the absolute value of the numeric attribute value."
+  },
+  "add": {
+    "scope": "xml",
+    "prefix": "add",
+    "body": [
+      "add([value])"
+    ],
+    "description": "[attr | add([value])] :                 Returns the sum of the numeric attribute value and the value specified by the parameter. : value: The optional numeric value to add to the specified attribute value. Default is 1.\n                    "
+  },
+  "and": {
+    "scope": "xml",
+    "prefix": "and",
+    "body": [
+      "and(value)"
+    ],
+    "description": "[attr |  and(value)] :                 Returns the AND of two values.  The values provided on each side must be 1/0, yes/no or true/false. : value: The boolean value to compare by.\n                    "
+  },
+  "ceiling": {
+    "scope": "xml",
+    "prefix": "ceiling",
+    "body": [
+      "ceiling()"
+    ],
+    "description": "[attr | ceiling()] :                 Returns the smallest integer greater than or equal to a numeric attribute value."
+  },
+  "div": {
+    "scope": "xml",
+    "prefix": "div",
+    "body": [
+      "div([value])"
+    ],
+    "description": "[attr | div([value])] :                 Returns the result of dividing the numeric attribute value by the specified value of the parameter. : value: The optional numeric value to divide the numeric attribute value by. Default is 2.\n                    "
+  },
+  "divide": {
+    "scope": "xml",
+    "prefix": "divide",
+    "body": [
+      "divide([value])"
+    ],
+    "description": "[attr | divide([value])] :                 Returns the result of dividing the numeric attribute value by the specified value of the parameter. : value: The optional numeric value to divide the numeric attribute value by. Default is 2.\n                    "
+  },
+  "floor": {
+    "scope": "xml",
+    "prefix": "floor",
+    "body": [
+      "floor()"
+    ],
+    "description": "[attr | floor()] :                 Returns the largest integer less than or equal to the numeric attribute value."
+  },
+  "greaterthan": {
+    "scope": "xml",
+    "prefix": "greaterthan",
+    "body": [
+      "greaterthan(value[, ifgreater][, ifnotgreater])"
+    ],
+    "description": "[attr | greaterthan(value[, ifgreater][, ifnotgreater])] :                 Returns true (or ifgreater) if the attribute value is greater than the parameter value, false (or ifnotgreater) otherwise. : value: The numeric value to compare with the attribute value.\n                        ifgreater: The optional value returned if the attribute value is greater than the parameter value.\n                        ifnotgreater: The optional value returned if the attribute value is not greater than the parameter value.\n                    "
+  },
+  "isbetween": {
+    "scope": "xml",
+    "prefix": "isbetween",
+    "body": [
+      "isbetween(integer_lowvalue, integer_highvalue[, ifbetween][, ifnotbetween])"
+    ],
+    "description": "[attr |  isbetween(integer_lowvalue, integer_highvalue[, ifbetween][, ifnotbetween])] :                 Returns true (or ifbetween) if the attribute value is greater than or equal to the first parameter value and less than or equal to the second parameter value, false (or ifnotbetween) otherwise. : lowvalue: The lower bound of the range to check.\n                        highvalue: The higher bound of the range to check.\n                        ifbetween: The optional value returned if the attribute value is greater than or equal to the first parameter value and less than or equal to the second parameter value.\n                        ifnotbetween: The optional value returned if the attribute value is less than the first parameter value or greater than the second parameter value.\n                    "
+  },
+  "isequal": {
+    "scope": "xml",
+    "prefix": "isequal",
+    "body": [
+      "isequal(value[, ifequal][, ifnotequal])"
+    ],
+    "description": "[attr |  isequal(value[, ifequal][, ifnotequal])] :                 Returns true (or ifequal) if the attribute value is equal to the parameter value, false (or ifnotequal) otherwise. : value: The numeric value to compare with the attribute value.\n                        ifequal: The optional value returned if the attribute value is equal to the parameter value.\n                        ifnotequal: The optional value returned if the attribute value is not equal to the parameter value.\n                    "
+  },
+  "isgreater": {
+    "scope": "xml",
+    "prefix": "isgreater",
+    "body": [
+      "isgreater(value[, ifgreater][, ifnotgreater])"
+    ],
+    "description": "[attr | isgreater(value[, ifgreater][, ifnotgreater])] :                 Returns true (or ifgreater) if the attribute value is greater than the parameter value, false (or ifnotgreater) otherwise. : value: The numeric value to compare with the attribute value.\n                        ifgreater: The optional value returned if the attribute value is greater than the parameter value.\n                        ifnotgreater: The optional value returned if the attribute value is not greater than the parameter value.\n                    "
+  },
+  "isless": {
+    "scope": "xml",
+    "prefix": "isless",
+    "body": [
+      "isless(value[, ifless][, ifnotless])"
+    ],
+    "description": "[attr | isless(value[, ifless][, ifnotless])] :                 Returns true (or ifless) if the attribute value is less than the parameter value, false (or ifnotless) otherwise. : value: The numeric value to compare with the attribute value.\n                        ifless: The optional value returned if the attribute value is less than the parameter value.\n                        ifnotless: The optional value returned if the attribute value is not less than the parameter value.\n                    "
+  },
+  "lessthan": {
+    "scope": "xml",
+    "prefix": "lessthan",
+    "body": [
+      "lessthan(value[, ifless][, ifnotless])"
+    ],
+    "description": "[attr | lessthan(value[, ifless][, ifnotless])] :                 Returns true (or ifless) if the attribute value is less than the parameter value, false (or ifnotless) otherwise. : value: The numeric value to compare with the attribute value.\n                        ifless: The optional value returned if the attribute value is less than the parameter value.\n                        ifnotless: The optional value returned if the attribute value is not less than the parameter value.\n                    "
+  },
+  "mathadd": {
+    "scope": "xml",
+    "prefix": "mathadd",
+    "body": [
+      "mathadd([value])"
+    ],
+    "description": "[attr | mathadd([value])] :                 Returns the sum of the numeric attribute value and the value specified by the parameter. : value: The optional numeric value to add to the specified attribute value. Default is 1.\n                    "
+  },
+  "mathmod": {
+    "scope": "xml",
+    "prefix": "mathmod",
+    "body": [
+      "mathmod(value)"
+    ],
+    "description": "[attr | mathmod(value)] :                 Returns the modulus of the numeric attribute value divided by the specified parameter value. : value: The number to divide the attribute value by.\n                    "
+  },
+  "mathpow": {
+    "scope": "xml",
+    "prefix": "mathpow",
+    "body": [
+      "mathpow([value])"
+    ],
+    "description": "[attr | mathpow([value])] :                 Returns the numeric attribute value raised to the power specified by the parameter value. : value: The optional power to raise the attribute value to. Default is 2.\n                    "
+  },
+  "mathround": {
+    "scope": "xml",
+    "prefix": "mathround",
+    "body": [
+      "mathround([integer_value])"
+    ],
+    "description": "[attr | mathround([integer_value])] :                 Returns the numeric attribute value rounded to the number of decimal places specified by the parameter. : value: The optional number of decimal places. Default is 2.\n                    "
+  },
+  "mathsub": {
+    "scope": "xml",
+    "prefix": "mathsub",
+    "body": [
+      "mathsub([value])"
+    ],
+    "description": "[attr | mathsub([value])] :                 Returns the difference between the numeric attribute value and the value specified by the parameter. : value: The optional numeric value to subtract the attribute value by.\n                    "
+  },
+  "modulus": {
+    "scope": "xml",
+    "prefix": "modulus",
+    "body": [
+      "modulus(value)"
+    ],
+    "description": "[attr | modulus(value)] :                 Returns the modulus of the numeric attribute value divided by the specified parameter value. : value: The number to divide the attribute value by.\n                    "
+  },
+  "multiply": {
+    "scope": "xml",
+    "prefix": "multiply",
+    "body": [
+      "multiply([value])"
+    ],
+    "description": "[attr | multiply([value])] :                 Returns the result of multiplying the numeric attribute value with the specified value of the parameter. : value: The optional numeric value to multiply the numeric attribute value by. Default is 2.\n                    "
+  },
+  "or": {
+    "scope": "xml",
+    "prefix": "or",
+    "body": [
+      "or(value)"
+    ],
+    "description": "[attr |  or(value)] :                 Returns the OR of two values.  The values provided on each side must be 1/0, yes/no or true/false. : value: The boolean value to compare by.\n                    "
+  },
+  "pow": {
+    "scope": "xml",
+    "prefix": "pow",
+    "body": [
+      "pow([value])"
+    ],
+    "description": "[attr | pow([value])] :                 Returns the numeric attribute value raised to the power specified by the parameter value. : value: The optional power to raise the attribute value to. Default is 2.\n                    "
+  },
+  "rand": {
+    "scope": "xml",
+    "prefix": "rand",
+    "body": [
+      "rand([integer_value])"
+    ],
+    "description": "[attr | rand([integer_value])] :                 Returns a random integer between 0 and the parameter value. : value: The optional value that limits the highest possible random integer. Default is 100.\n                    "
+  },
+  "random": {
+    "scope": "xml",
+    "prefix": "random",
+    "body": [
+      "random([integer_value])"
+    ],
+    "description": "[attr | random([integer_value])] :                 Returns a random integer between 0 and the parameter value. : value: The optional value that limits the highest possible random integer. Default is 100.\n                    "
+  },
+  "round": {
+    "scope": "xml",
+    "prefix": "round",
+    "body": [
+      "round([integer_value])"
+    ],
+    "description": "[attr | round([integer_value])] :                 Returns the numeric attribute value rounded to the number of decimal places specified by the parameter. : value: The optional number of decimal places. Default is 2.\n                    "
+  },
+  "sqrt": {
+    "scope": "xml",
+    "prefix": "sqrt",
+    "body": [
+      "sqrt()"
+    ],
+    "description": "[attr | sqrt()] :                 Returns the square root of the numeric attribute value."
+  },
+  "subtract": {
+    "scope": "xml",
+    "prefix": "subtract",
+    "body": [
+      "subtract([value])"
+    ],
+    "description": "[attr | subtract([value])] :                 Returns the difference between the numeric attribute value and the value specified by the parameter. : value: The optional numeric value to subtract the attribute value by.\n                    "
+  },
+  "api:break": {
+    "scope": "xml",
+    "prefix": "break",
+    "body": [
+      "<api:break/>"
+    ],
+    "description": "The api:break keyword can be used to break out of iterations of api:call or api:enum. It can also be used to break out of the entire script if it is used outside the scope of any other API Script keywords."
+  },
+  "api:call": {
+    "scope": "xml",
+    "prefix": "call",
+    "body": [
+      "<api:call op=\"${1:fileListDir}\" in=\"${2:inItem}\" out=\"${3:outItem}\">",
+      "<api:push/>",
+      "</api:call>"
+    ],
+    "description": "The api:call keyword is used to call operations. Valid operations are the following:    Built-in operations installed along with provider assemblies located in the bin subfolder of the application    Operations you write yourself in .NET or Java and place in the bin subfolder of the application    Operations take items as input and return feeds as output. The scope of api:call is executed for every item in the feed returned from the call. Within the scope of api:call, you can inspect and modify the attributes in the item returned. You can then provide these attributes as inputs to another operation, thus forming an operation pipeline. Or, you can push out the item to the output."
+  },
+  "api:case": {
+    "scope": "xml",
+    "prefix": "case",
+    "body": [
+      "<api:case value=\"${1:caseMatch}\">",
+      "</api:case>"
+    ],
+    "description": "The api:case keyword is used with the api:select keyword. The api:case keyword consists of a block of API Script that is executed if the value in api:select matches the value in api:case."
+  },
+  "api:catch": {
+    "scope": "xml",
+    "prefix": "catch",
+    "body": [
+      "<api:catch code=\"${1:myerror}\">",
+      "<api:set attr=\"api:ecode\" value=\"[_code]\"/>",
+      "<api:set attr=\"api:emessage\" value=\"[_description]: [_details]\"/>",
+      "<api:push/>",
+      "</api:catch>"
+    ],
+    "description": "The api:catch keyword is used to create an exception-handling block in a script. In addition to api:try, you can contain an api:catch block within any of the following keywords, the scope of which serves as an implicit api:try section:"
+  },
+  "api:check": {
+    "scope": "xml",
+    "prefix": "check",
+    "body": [
+      "<api:check attr=\"${1:checkItem}\">",
+      "...",
+      "</api:check>"
+    ],
+    "description": "The api:check keyword can be used with or without a value parameter. Without a value parameter, it is used to ensure that an attribute is present in an item and that it is not a null string before the body of the api:check is executed.    If a value parameter is specified, the api:check body executes only if the expression evaluates to true. Other values are considered false. The evaluation is case insensitive.    Like other simple conditionals in API Script, it can be paired with an api:else keyword. Note that, unlike api:equals, api:check does not throw an exception if the attribute does not exist in the item."
+  },
+  "api:continue": {
+    "scope": "xml",
+    "prefix": "continue",
+    "body": [
+      "<api:continue/>"
+    ],
+    "description": "The api:continue keyword can be used to move to the next iterations of api:call or api:enum."
+  },
+  "api:default": {
+    "scope": "xml",
+    "prefix": "default",
+    "body": [
+      "<api:default>",
+      "</api:default>"
+    ],
+    "description": "The api:default keyword is used with the api:select keyword. The api:default keyword consists of a block of API Script that is executed if the value in api:select does not match any of the values in api:case."
+  },
+  "api:else": {
+    "scope": "xml",
+    "prefix": "else",
+    "body": [
+      "<api:else>",
+      "</api:else>"
+    ],
+    "description": "The api:else keyword is used to execute an alternate block of code when a test like api:exists or api:match fails. It can also be used to execute an alternate block of code within an api:call when the call fails to produce any output items.    Unlike other languages API Script requires the api:else statement to be within the scope of the test it belongs to."
+  },
+  "api:enum": {
+    "scope": "xml",
+    "prefix": "enum",
+    "body": [
+      "<api:enum list=\"[${1:listItem}]\" separator=\",\">",
+      "[_value]",
+      "</api:enum>"
+    ],
+    "description": "The api:enum keyword can be used to enumerate over the attributes within an item, a delimited list, a supplied range of values, and the values of a multivalued attribute. The body of api:enum is executed for each element of the set that is being iterated upon."
+  },
+  "api:equals": {
+    "scope": "xml",
+    "prefix": "equals",
+    "body": [
+      "<api:equals attr=\"${1:attr}\" value=\"${2:value}\">",
+      "<api:else>",
+      "</api:else>",
+      "</api:equals>"
+    ],
+    "description": "The api:equals keyword compares the value of an attribute to a reference value. Unlike api:check, the api:equals keyword will throw an exception if the specified item does not contain the specified attribute. If the specified attribute exists and its value matches, then the comparison will succeed."
+  },
+  "api:exists": {
+    "scope": "xml",
+    "prefix": "exists",
+    "body": [
+      "<api:exists attr=\"${1:attr}\">",
+      "<api:else>",
+      "</api:else>",
+      "</api:exists>"
+    ],
+    "description": "The api:exists keyword checks that an attribute has a value in the specified item. The api:notnull keyword is a synonym for api:exists."
+  },
+  "api:first": {
+    "scope": "xml",
+    "prefix": "first",
+    "body": [
+      "<api:first>",
+      "  <api:enum item=\"${1:list}\">",
+      "    [_attr]",
+      "  </api:enum>",
+      "</api:first>",
+      "  <api:enum item=\"${1:list}\">",
+      "    [_value]",
+      "  </api:enum>",
+      "<api:last>",
+      "</api:last>"
+    ],
+    "description": "The api:first keyword is used to execute a section of a script for only the first iteration of an api:call or api:enum keyword. It is a convenient way to generate headings or to inspect the first item of a feed before going through the rest of the feed. During the first iteration, the api:first body executes before any other code within the api:call or api:enum, regardless of where the api:first is located within the api:call or api:enum body. As a reminder of this, it is recommended to locate the api:first at the top of the api:call or api:enum body. If the scope has no items, then neither api:first nor api:last are executed."
+  },
+  "api:finally": {
+    "scope": "xml",
+    "prefix": "finally",
+    "body": [
+      "<api:finally>",
+      "</api:finally>"
+    ],
+    "description": "The api:finally keyword is used to execute a section of a script after control leaves an api:call, api:try, or api:script statement. It is a convenient way to clean up the formatting of generated documents."
+  },
+  "api:if": {
+    "scope": "xml",
+    "prefix": "if",
+    "body": [
+      "<api:if attr=\"${1:attr1}\" value=\"[${2:attr2}]\" operator=\"${3:equals}\">",
+      "<api:else>",
+      "False",
+      "</api:else>",
+      "True",
+      "</api:if>"
+    ],
+    "description": "You can use the api:if keyword to evaluate expressions that can contain items, attributes, and values. The scope of the keyword is executed if the specified expression evaluates to true."
+  },
+  "api:include": {
+    "scope": "xml",
+    "prefix": "include",
+    "body": [
+      "<api:include file=\"${1:globals.rsb}\"/>"
+    ],
+    "description": "The api:include keyword is used to include API Script from other files. Like traditional includes in other programming languages, api:include is replaced by the contents of the file specified in the file parameter."
+  },
+  "api:info": {
+    "scope": "xml",
+    "prefix": "info",
+    "body": [
+      "<api:info title=\"${1:title}\" desc=\"${2:desc}\">",
+      "  <attr name=\"ID\"           xs:type=\"int\" key=\"true\",other:xPath=\"content/properties/ID\" desc=\"\" />",
+      "</api:info>"
+    ],
+    "description": "The api:info keyword is used to describe the metadata for scripts. This information is used by the provider to implement basic error checking on user input and to set default values. The api:info keyword can contain the following: Column definitions, Input parameters the script expects, Output the script produces"
+  },
+  "api:last": {
+    "scope": "xml",
+    "prefix": "last",
+    "body": [
+      "<api:last>",
+      "</api:last>"
+    ],
+    "description": "API Script keywords within the scope of the api:last keyword will only be executed after the last item is encountered and only if there were items returned by api:call or api:enum.    An api:last statement is executed only after the last item is processed; it maintains access to the last item in the feed. If the scope has no items, then neither api:first nor api:last are executed."
+  },
+  "api:map": {
+    "scope": "xml",
+    "prefix": "map",
+    "body": [
+      "<api:map from=\"${1:copyfrom}\" to=\"${2:copyto}\" map=\"* = *\"/>"
+    ],
+    "description": "The api:map keyword is used to map attributes in one item to attributes in another item. Attributes are read from one item and written to another with the new names specified in the map string. The api:map keyword does not clear the destination item: It simply adds new attributes to it. Or, if an attribute exists in the destination item, it is overwritten, and other attributes remain as they were."
+  },
+  "api:match": {
+    "scope": "xml",
+    "prefix": "match",
+    "body": [
+      "<api:match pattern=\"${1:pattern}\" type=\"${2:regex}\" value=\"${3:value}\">",
+      "</api:match>"
+    ],
+    "description": "The api:match keyword is similar to the api:equals keyword; however, it permits complex matching rules."
+  },
+  "api:notequals": {
+    "scope": "xml",
+    "prefix": "notequals",
+    "body": [
+      "<api:notequals attr=\"${1:attr}\" value=\"${2:value}\">",
+      "</api:notequals>"
+    ],
+    "description": "The api:notequals keyword verifies that the attribute does not match the specified value. It has a similar behavior to the api:equals keyword."
+  },
+  "api:null": {
+    "scope": "xml",
+    "prefix": "null",
+    "body": [
+      "<api:null attr=\"${1:attr}\">",
+      "<api:else>",
+      "</api:else>",
+      "</api:null>"
+    ],
+    "description": "The api:null keyword checks that an attribute does not exist in the specified item."
+  },
+  "api:notnull": {
+    "scope": "xml",
+    "prefix": "notnull",
+    "body": [
+      "<api:notnull attr=\"${1:attr}\">",
+      "<api:else>",
+      "</api:else>",
+      "</api:notnull>"
+    ],
+    "description": "The api:notnull keyword checks that an attribute has a value in the specified item. The api:exists keyword is a synonym for api:notnull."
+  },
+  "api:push": {
+    "scope": "xml",
+    "prefix": "push",
+    "body": [
+      "<api:push/>"
+    ],
+    "description": "The api:push keyword pushes an item into the output feed of the script. If there are no api:push elements in your script, no output items will result from it."
+  },
+  "api:script": {
+    "scope": "xml",
+    "prefix": "script",
+    "body": [
+      "<api:script method=\"POST\">",
+      "</api:script>"
+    ],
+    "description": "The api:script keyword can be used to create script blocks that respond to SQL statements."
+  },
+  "api:select": {
+    "scope": "xml",
+    "prefix": "select",
+    "body": [
+      "<api:select value=\"[${1:value}]\">",
+      "<api:case value=\"${2:value}\">",
+      "</api:case>",
+      "<api:case value=\"${3:value}\">",
+      "</api:case>",
+      "<api:default>",
+      "</api:default>",
+      "</api:select>"
+    ],
+    "description": "The api:select keyword is similar to a switch-case block in other programming languages and can be used to create complex conditional statements. The body of api:select can contain one or more api:case keywords and one api:default keyword.    The value in api:select is matched with those specified in api:case. The body of the api:case statement contains the keywords and statements to be executed if the value specified matches the value in the api:select keyword.    The body of the api:default statement will be executed only if none of the api:case statements result in a match. The api:default keyword has no parameters and can appear only once in an api:select."
+  },
+  "api:set": {
+    "scope": "xml",
+    "prefix": "set",
+    "body": [
+      "<api:set item=\"${1:item}\" attr=\"${2:attr}\">",
+      "Sample",
+      "</api:set>"
+    ],
+    "description": "The api:set keyword sets a value in an attribute. If an attribute is set in an item that does not exist, the item is automatically created.    There are two ways to set a value using api:set. You can set the value parameter or, for large values that are multiline and complex, you can set the value using the scope of the keyword itself."
+  },
+  "api:set2": {
+    "scope": "xml",
+    "prefix": "set",
+    "body": [
+      "<api:set attr=\"${1:attr}\" value=\"${2:value}\"/>"
+    ],
+    "description": "The api:set keyword sets a value in an attribute. If an attribute is set in an item that does not exist, the item is automatically created.    There are two ways to set a value using api:set. You can set the value parameter or, for large values that are multiline and complex, you can set the value using the scope of the keyword itself."
+  },
+  "api:setc": {
+    "scope": "xml",
+    "prefix": "setc",
+    "body": [
+      "<api:setc attr=\"${1:attr}\" value=\"${2:value}\" />"
+    ],
+    "description": "The api:setc keyword enables you to add static text without escaping the special characters in API Script, such as square brackets. While special characters can be escaped with a backslash, this keyword provides a shortcut. For example, this keyword can be used to easily set an XPath."
+  },
+  "api:setm": {
+    "scope": "xml",
+    "prefix": "setm",
+    "body": [
+      "<api:setm>",
+      "${1:attr} = ${2:value}",
+      "${3:attr} = ${4:value}",
+      "</api:setm>"
+    ],
+    "description": "The api:setm keyword is a shorthand for api:set that can be used to perform multiple sets with just one keyword.    Each line, separated by \r\n, is a separate set operation. Multiline values can be specified with three single quotes ('''), as in Python.    The first equals sign \"=\" separates the attribute name from the value. This means that attribute values can contain spaces. However, leading and trailing spaces are ignored. Quotes can be used to include leading or trailing spaces, as shown in the examples."
+  },
+  "api:throw": {
+    "scope": "xml",
+    "prefix": "throw",
+    "body": [
+      "<api:throw code=\"${1:myerror}\" desc=\"${2:thedescription}\" />"
+    ],
+    "description": "The api:throw keyword is used to raise an error (exception) from within a script."
+  },
+  "api:try": {
+    "scope": "xml",
+    "prefix": "try",
+    "body": [
+      "<api:try>",
+      "<api:throw code=\"myerror\" description=\"thedescription\" details=\"Other Details.\"/>",
+      "<api:catch code=\"myerror\">",
+      "  <api:push/>",
+      "</api:catch>",
+      "</api:try>"
+    ],
+    "description": "The api:try and api:catch keywords are used to create an exception-handling block in a script. If any keyword inside the api:try body throws an APIException, the provider will look for a matching api:catch keyword inside the same scope and will execute the catch body."
+  },
+  "api:unset": {
+    "scope": "xml",
+    "prefix": "unset",
+    "body": [
+      "<api:unset attr=\"${1:attr}\"/>"
+    ],
+    "description": "The api:unset keyword is used to delete attributes from an item or delete the item itself."
+  },
+  "api:validate": {
+    "scope": "xml",
+    "prefix": "validate",
+    "body": [
+      "<api:validate attr=\"${1:attr}\"   desc=\"${2:desc}\"/>"
+    ],
+    "description": "You can use api:validate to throw an error if a required value is not provided."
+  }
+}
